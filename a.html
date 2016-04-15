@@ -15,7 +15,8 @@
       <button onclick="document.getElementById('right').setAttribute('set_bind','true');" style="display: block; margin: 2%">right</button>
       <button onclick="document.getElementById('top').setAttribute('set_bind','true');" style="display: block; margin: 2%">top</button>
       <button onclick="document.getElementById('bottom').setAttribute('set_bind','true');" style="display: block; margin: 2%">bottom</button>
-    </div><div><X3D showStat="false" xmlns="http://www.web3d.org/specifications/x3d-namespace" width="500.000000px" height="400.000000px"><head><meta name="generator" content="FEniCS/DOLFIN (http://fenicsproject.org)"></meta>
+    </div><br/>
+    <div style="display:inline-block"><X3D showStat="false" xmlns="http://www.web3d.org/specifications/x3d-namespace" width="500.000000px" height="400.000000px"><head><meta name="generator" content="FEniCS/DOLFIN (http://fenicsproject.org)"></meta>
         </head>
         <Scene><Shape><Appearance><Material diffuseColor="1.000000 1.000000 1.000000" emissiveColor="0.000000 0.000000 0.000000" specularColor="0.000000 0.000000 0.000000" ambientIntensity="0" shininess="0.5" transparency="0"></Material>
             </Appearance>
@@ -39,8 +40,20 @@
           <DirectionalLight ambientIntensity="0" intensity="1"></DirectionalLight>
         </Scene>
       </X3D>
+      <div style="position: absolute; margin: 1%; text-align: left; font-size: 12px; color: black;">Number of vertices: 125, number of cells: 384</div>      
     </div>
-    <div style="position: absolute; margin: 1%; text-align: left; font-size: 12px; color: black;">Number of vertices: 125, number of cells: 384</div>
+    
+    <div style="display:inline-block; width:20px;">
+    <svg style="height: 100px;">
+      <defs>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+          <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+        </linearGradient>
+      </defs>
+    <rect x="0" y="0" width="20" height="100" fill="url(#grad1)" />
+    </svg>              
+    </div>
   </body>
 </html>
 
